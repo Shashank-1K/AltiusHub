@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>About Page</h1>
+    <header class="masthead">
+        <p class="masthead-intro">Hi, I'm</p>
+        <h1 class="masthead-heading">SHASHANK!</h1>
+      </header>
+      <section class="intro">
+        <h1>Introduction</h1>
+          <p>I'm a future Full Stack developer who loves <span class="bold">good design</span>, <span class="bold">good food</span> and <span class="bold">good people</span>. I work in totally different industry now, but I am now in trasition of my new career!. I am so excited about learning that make interactive webpage and design.</p>
+          <p>I love the web and all the awesome new technologies. I'm excited to learn a new things that make the web more beautiful, functional, and perfect.</p>
+        
+          <p>I love learning a new thing! Expecially in tech industries. I am so happy that I can learn at Thinkful and as student of Thinkful community!</p>
+      </section>
+      <section class="where-Im-from">
+        <h1>Where I'm From</h1>
+        <p>I'm from India, specifically - Hyderabad. I'm stuying <span class="bold">Mern Stack</span> program at Edx. 
+      </section>
+      <section class="more-about-me">
+        <h1>More About Me</h1>
+        <h2>What are your favorite hobbies?</h2>
+          <p>My favorite hobby was playing Chess. But now I am enjoying most of my time with study coding!<p>
+        <h2>What's your dream job?</h2>
+          <p>My goal is that become a full stack developer, so that I can manage front-end side and back-end side as well.
+            Before achieve that goal, I need to master front-end developer skills first!</p>
+        <h2>What's your background?</h2>
+          <p>I've seen programming since I was very young. My dad was a Tutor!. He always wants me to do stuying web programming. Here I am! now I am studying hard to master front end developing skills.</p>
+      </section>
+      <footer class="content-footer">
+        <p>Say hi to me on these social networks:</p>
+        <ul class="social">
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+        <p>Cover Image via <a href="http://www.unsplash.com">Unsplash</a></p>
+      </footer>
+      <style>
+        body {
+  margin: 0;
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*---------- heading ----------- */
+.masthead {
+    padding: 15em 0;
+    background-image: url("https://i.imgur.com/D4rA84W.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 1em solid #ffcf33;
+}
+
+.masthead-heading {
+  font-size: 6em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-shadow: 1.5px 3px 0px #edc647;
+  color: #F7E199;
+  margin-top: -0.2em;
+
+}
+.masthead-intro {
+  font-size: 2em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  text-align: center;
+  color: #e5e5e5;
+  margin-bottom: 0.1em;
+}
+
+/*---------- section ----------- */
+.intro,
+.where-Im-from,
+.more-about-me {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.intro > p,
+.where-Im-from > p,
+.more-about-me > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+section > h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.more-about-me > h2 {
+  font-size: 1.2em;
+  font-family: "Gentium Book Basic";
+  font-weight: bold;
+  color: #f7e199;
+}
+
+/*---------- footer ----------- */
+.content-footer {
+  margin-top: 8em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: #ffcf33;
+}
+
+.content-footer > p {
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-family: "Open Sans"
+}
+
+footer > ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+footer ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.content-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width:500px){
+  .masthead {
+    padding: 3em 0;
+  }
+  .masthead-heading {
+    font-size: 3em;
+  }
+  .intro,
+  .where-Im-from,
+  .more-about-me,
+  .content-footer {
+    font-size: 0.5em;
+  }
+}
+      </style>
+{% endblock content %}
